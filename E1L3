@@ -1,0 +1,25 @@
+public class E1L3{
+	public static void main(String args[]){
+	
+	double num=0,maior=0,menor=0;
+	
+	num = Input.readDouble("Digite um numero: ");
+	menor = num;
+	maior = num;
+	
+		while(num!=0){
+		
+		if (num>maior)
+			maior = num;
+		else if (num<menor)
+			menor = num; 
+		
+		num = Input.readDouble("Digite um numero: ");
+		
+		}
+		System.out.println("Fim da operacao.");
+		System.out.println("O maior numero e: "+maior+" O menor numero e: "+menor+" A media entre eles e: "+(maior + menor)/2);
+	
+	
+	}
+}
